@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>陈鑫浩</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2019-05-05T02:15:51.985Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>robert</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用Django Signal 实现对模块的解耦</title>
+    <link href="http://yoursite.com/2019/05/05/django-signal-usage/"/>
+    <id>http://yoursite.com/2019/05/05/django-signal-usage/</id>
+    <published>2019-05-05T02:03:29.000Z</published>
+    <updated>2019-05-05T02:15:51.985Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;最近负责开发一个自动发现主机信息的应用。应用中数据流向复杂，处理逻辑冗余堆积。项目技术栈选择的是Django + Vuejs。前端使用 Webpack打包，模块化管理，主要是展示数据。后端涉及的模块多、处理规则多、数据表多，每次涉及之前功能修改时，
+      
+    
+    </summary>
+    
+      <category term="Django" scheme="http://yoursite.com/categories/Django/"/>
+    
+    
+      <category term="Django" scheme="http://yoursite.com/tags/Django/"/>
+    
+      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GitLab-CI持续集成实践</title>
+    <link href="http://yoursite.com/2019/05/05/gitlab-ci-practice/"/>
+    <id>http://yoursite.com/2019/05/05/gitlab-ci-practice/</id>
+    <published>2019-05-05T01:43:37.000Z</published>
+    <updated>2019-05-05T02:00:43.784Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;持续集成是一种软件开发实践，即团队开发成员经常集成它们的工作，通过每个成员每天至少集成一次，也就意味着每天可能会发生多次集成。每次集成都通过自动化的构建（包括编译，发布，自动化测试）来验证，从而尽早地发现集成错误。gitlab一般用Gitlab-C
+      
+    
+    </summary>
+    
+      <category term="CI/CD" scheme="http://yoursite.com/categories/CI-CD/"/>
+    
+    
+      <category term="CI/CD" scheme="http://yoursite.com/tags/CI-CD/"/>
+    
+      <category term="DevOps" scheme="http://yoursite.com/tags/DevOps/"/>
+    
+  </entry>
+  
+</feed>
