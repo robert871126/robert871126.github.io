@@ -104,13 +104,13 @@
 <meta property="og:site_name" content="陈鑫浩">
 <meta property="og:description" content="最近负责开发一个自动发现主机信息的应用。应用中数据流向复杂，处理逻辑冗余堆积。项目技术栈选择的是Django + Vuejs。前端使用 Webpack打包，模块化管理，主要是展示数据。后端涉及的模块多、处理规则多、数据表多，每次涉及之前功能修改时，都消耗大量时间进行code review。让我才意识到，在复杂应用中解耦模块非常重要。下面是一些调研和实践。    1. 观察者模式 2. Djang">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/2019/05/05/django-signal-usage/djano-signal-usage-01.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/05/05/django-signal-usage/django-signal-usage-01.jpg">
 <meta property="og:image" content="http://yoursite.com/2019/05/05/django-signal-usage/django-signal-usage-02.jpg">
-<meta property="og:updated_time" content="2019-05-05T02:11:01.916Z">
+<meta property="og:updated_time" content="2019-05-05T02:15:51.985Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用Django Signal 实现对模块的解耦">
 <meta name="twitter:description" content="最近负责开发一个自动发现主机信息的应用。应用中数据流向复杂，处理逻辑冗余堆积。项目技术栈选择的是Django + Vuejs。前端使用 Webpack打包，模块化管理，主要是展示数据。后端涉及的模块多、处理规则多、数据表多，每次涉及之前功能修改时，都消耗大量时间进行code review。让我才意识到，在复杂应用中解耦模块非常重要。下面是一些调研和实践。    1. 观察者模式 2. Djang">
-<meta name="twitter:image" content="http://yoursite.com/2019/05/05/django-signal-usage/djano-signal-usage-01.jpg">
+<meta name="twitter:image" content="http://yoursite.com/2019/05/05/django-signal-usage/django-signal-usage-01.jpg">
 
 
 
@@ -370,7 +370,7 @@
                 
               
 
-              <time title="创建时间：2019-05-05 10:03:29 / 修改时间：10:11:01" itemprop="dateCreated datePublished" datetime="2019-05-05T10:03:29+08:00">2019-05-05</time>
+              <time title="创建时间：2019-05-05 10:03:29 / 修改时间：10:15:51" itemprop="dateCreated datePublished" datetime="2019-05-05T10:03:29+08:00">2019-05-05</time>
             
 
             
@@ -465,7 +465,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">django/dispatch/dispatcher.py</span><br><span class="line"></span><br><span class="line">class Signal(object):</span><br><span class="line"></span><br><span class="line">    def send(self, sender, **named):</span><br><span class="line">        responses = []</span><br><span class="line">        for receiver in self._live_receivers(sender):</span><br><span class="line">            response = receiver(signal=self, sender=sender, **named)</span><br><span class="line">            responses.append((receiver, response))</span><br><span class="line">        return responses</span><br></pre></td></tr></table></figure>
 <h1><span id="3-信号解耦-异步任务">3. 信号解耦、异步任务</span></h1><p>在学习了观察者模式，了解 Django Signal 之后，就基本掌握了 Django 模块解耦的基础知识。接着，需要进一步明确模块之间的耦合机制，制定项目约定，就可以利落地实践了。</p>
 <p>梳理一下请求的处理链路：</p>
-<p><img src="djano-signal-usage-01.jpg" alt="flow"></p>
+<p><img src="django-signal-usage-01.jpg" alt="flow"></p>
 <p>请求经过接入层、中间件处理之后，由 URL 分发器匹配到合适的处理模块，最终某个模块负责返回响应。各个模块连接数据库、消息队列、对象存储保存状态。</p>
 <p>每个模块包含四部分：</p>
 <ul>
