@@ -104,13 +104,13 @@
 <meta property="og:site_name" content="陈鑫浩">
 <meta property="og:description" content="持续集成是一种软件开发实践，即团队开发成员经常集成它们的工作，通过每个成员每天至少集成一次，也就意味着每天可能会发生多次集成。每次集成都通过自动化的构建（包括编译，发布，自动化测试）来验证，从而尽早地发现集成错误。gitlab一般用Gitlab-CI，而github一般用jenkins，主要功能是在你提交或merge代码到仓库后，自动执行一些你定义好的命令， 比如安装依赖、单元测试、pep8检查">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/2019/05/05/gitlab-ci-practice/gitlab-ci-practice/gitlab-ci-01.png">
-<meta property="og:image" content="http://yoursite.com/2019/05/05/gitlab-ci-practice/gitlab-ci-practice/gitlab-ci-02.png">
-<meta property="og:updated_time" content="2019-05-05T01:55:41.065Z">
+<meta property="og:image" content="http://yoursite.com/2019/05/05/gitlab-ci-practice/gitlab-ci-01.png">
+<meta property="og:image" content="http://yoursite.com/2019/05/05/gitlab-ci-practice/gitlab-ci-02.png">
+<meta property="og:updated_time" content="2019-05-05T02:00:43.784Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="GitLab-CI持续集成实践">
 <meta name="twitter:description" content="持续集成是一种软件开发实践，即团队开发成员经常集成它们的工作，通过每个成员每天至少集成一次，也就意味着每天可能会发生多次集成。每次集成都通过自动化的构建（包括编译，发布，自动化测试）来验证，从而尽早地发现集成错误。gitlab一般用Gitlab-CI，而github一般用jenkins，主要功能是在你提交或merge代码到仓库后，自动执行一些你定义好的命令， 比如安装依赖、单元测试、pep8检查">
-<meta name="twitter:image" content="http://yoursite.com/2019/05/05/gitlab-ci-practice/gitlab-ci-practice/gitlab-ci-01.png">
+<meta name="twitter:image" content="http://yoursite.com/2019/05/05/gitlab-ci-practice/gitlab-ci-01.png">
 
 
 
@@ -370,7 +370,7 @@
                 
               
 
-              <time title="创建时间：2019-05-05 09:43:37 / 修改时间：09:55:41" itemprop="dateCreated datePublished" datetime="2019-05-05T09:43:37+08:00">2019-05-05</time>
+              <time title="创建时间：2019-05-05 09:43:37 / 修改时间：10:00:43" itemprop="dateCreated datePublished" datetime="2019-05-05T09:43:37+08:00">2019-05-05</time>
             
 
             
@@ -438,8 +438,8 @@
 <li><a href="#pep-8">pep 8</a></li>
 </ul>
 <!-- tocstop -->
-<p><img src="gitlab-ci-practice/gitlab-ci-01.png" alt="pipline"></p>
-<h1><span id="gitlab简单原理图">GitLab简单原理图</span></h1><p><img src="gitlab-ci-practice/gitlab-ci-02.png" alt="flow"></p>
+<p><img src="gitlab-ci-01.png" alt="pipline"></p>
+<h1><span id="gitlab简单原理图">GitLab简单原理图</span></h1><p><img src="gitlab-ci-02.png" alt="flow"></p>
 <h1><span id="安装和配置runner">安装和配置Runner</span></h1><p>首先， gitlab ci 需要单独部署在一台服务器上来运行， 对应的程序是GitLab Runner,<br>在ubuntu和centos上安装都是先根据一个shell脚本安装各种依赖， 然后再执行安装程序。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># For Debian/Ubuntu    </span><br><span class="line">$ curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-ci-multi-runner/script.deb.sh | sudo bash    </span><br><span class="line">$ sudo apt-get install gitlab-ci-multi-runner    </span><br><span class="line"># For CentOS    </span><br><span class="line">$ curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-ci-multi-runner/script.rpm.sh | sudo bash    </span><br><span class="line">$ sudo yum install gitlab-ci-multi-runner</span><br></pre></td></tr></table></figure></p>
 <p>为了能够让GitLab Runner 能够连接到我们的项目上需要注册操作：<br>sudo gitlab-runner register<br>然后根据提示输入配置信息（这些信息可以在项目的gitlab网站的CI/CD 配置里找到， 需要master权限）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">Please enter the gitlab-ci coordinator URL (e.g. https://gitlab.com )    </span><br><span class="line">https://gitlab.com  //项目gitlab的根域名， 一般公司都会部署自己内部使用的gitlab    </span><br><span class="line"></span><br><span class="line">Please enter the gitlab-ci token for this runner    </span><br><span class="line">xxx   // gitlab token, 每个项目都不一样    </span><br><span class="line"></span><br><span class="line">Please enter the gitlab-ci description for this runner    </span><br><span class="line">[hostame] my-runner  // 项目描述， 起个名称    </span><br><span class="line"></span><br><span class="line">Please enter the gitlab-ci tags for this runner (comma separated):    </span><br><span class="line">my-tag,another-tag   // 给该 Runner 指派 tags, 稍后也可以在 GitLab&apos;s UI 修改, 这里也可以直接回车， 使用默认值    </span><br><span class="line"></span><br><span class="line">Whether to run untagged jobs [true/false]:    </span><br><span class="line">[false]: true   // 选择 Runner 是否接收未指定 tags 的任务（默认值：false）， 稍后可以在 GitLab&apos;s UI 修改    </span><br><span class="line"></span><br><span class="line">Whether to lock Runner to current project [true/false]:    </span><br><span class="line">[true]: false // 该runner是否只能运行当前指定项目（根据token来判断的），默认值：true：    </span><br><span class="line"></span><br><span class="line">Please enter the executor: ssh, docker+machine, docker-ssh+machine, kubernetes, docker, parallels, virtualbox, docker-ssh, shell:    </span><br><span class="line">shell  // 选择runner的类型， 这里用shell就好</span><br></pre></td></tr></table></figure></p>
 <p>配置完成， sudo gitlab-runner list 可以查看当前runner的状态。</p>
@@ -499,15 +499,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/04/30/未命名文件夹/GitLab-CI持续集成实践/" rel="next" title="GitLab-CI持续集成实践">
-                <i class="fa fa-chevron-left"></i> GitLab-CI持续集成实践
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/05/05/django-signal-usage/" rel="prev" title="使用Django Signal 实现对模块的解耦">
+                使用Django Signal 实现对模块的解耦 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
