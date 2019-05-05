@@ -27,8 +27,7 @@
     
       
       
-        &lt;blockquote&gt;
-&lt;p&gt;最近负责开发一个自动发现主机信息的应用。应用中数据流向复杂，处理逻辑冗余堆积。项目技术栈选择的是Django + Vuejs。前端使用 Webpack打包，模块化管理，主要是展示数据。后端涉及的模块多、处理规则多、数据表多，每次涉及之前功能修改时，
+        &lt;!-- build time:Sun May 05 2019 12:59:47 GMT+0800 (CST) --&gt;&lt;blockquote&gt;&lt;p&gt;最近负责开发一个自动发现主机信息的应用。应用中数据流向复杂，处理逻辑冗余堆积。项目技术栈选择的是Django + Vuejs。前端使
       
     
     </summary>
@@ -53,7 +52,7 @@
     
       
       
-        &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class
+        &lt;!-- build time:Sun May 05 2019 13:09:45 GMT+0800 (CST) --&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;l
       
     
     </summary>
@@ -80,8 +79,7 @@
     
       
       
-        &lt;blockquote&gt;
-&lt;p&gt;持续集成是一种软件开发实践，即团队开发成员经常集成它们的工作，通过每个成员每天至少集成一次，也就意味着每天可能会发生多次集成。每次集成都通过自动化的构建（包括编译，发布，自动化测试）来验证，从而尽早地发现集成错误。gitlab一般用Gitlab-C
+        &lt;!-- build time:Sun May 05 2019 13:07:28 GMT+0800 (CST) --&gt;&lt;blockquote&gt;&lt;p&gt;持续集成是一种软件开发实践，即团队开发成员经常集成它们的工作，通过每个成员每天至少集成一次，也就意味着每天可能会发生多次集成。每次集
       
     
     </summary>
@@ -106,8 +104,7 @@
     
       
       
-        &lt;h2&gt;&lt;span id=&quot;gerrit简介&quot;&gt;Gerrit简介&lt;/span&gt;&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;Gerrit，一种免费、开放源代码的代码审查软件，使用网页界面。利用网页浏览器，同一个团队的软件程序员，可以相互审阅彼此修改后的程序代码，决定是否能够提交，退回
+        &lt;!-- build time:Sun May 05 2019 13:07:06 GMT+0800 (CST) --&gt;&lt;h2&gt;&lt;span id=&quot;gerrit简介&quot;&gt;Gerrit简介&lt;/span&gt;&lt;/h2&gt;&lt;blockquote&gt;&lt;p&gt;Gerrit，一种免费、开放源代码的代码审查
       
     
     </summary>
@@ -130,9 +127,7 @@
     
       
       
-        &lt;p&gt;SSH登陆linux服务器，显示&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;警告: setlocale: LC_CTYPE: 无法改变区域选项 (UTF-8)（warning: setlocale: LC_CTYPE: cannot change locale (UTF-8)
+        &lt;!-- build time:Sun May 05 2019 13:09:45 GMT+0800 (CST) --&gt;&lt;p&gt;SSH登陆linux服务器，显示&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;警告: setlocale: LC_CTYPE: 无法改变区域选项 (UTF-8)（w
       
     
     </summary>
@@ -155,7 +150,7 @@
     
       
       
-        &lt;h1&gt;&lt;span id=&quot;1-fastdfs介绍&quot;&gt;1. FastDFS介绍&lt;/span&gt;&lt;/h1&gt;&lt;p&gt;FastDFS是一个开源的分布式文件系统，她对文件进行管理，功能包括：文件存储、文件同步、文件访问（文件上传、文件下载）等，解决了大容量存储和负载均衡的问题。特别适合以文件
+        &lt;!-- build time:Sun May 05 2019 13:09:45 GMT+0800 (CST) --&gt;&lt;h1&gt;&lt;span id=&quot;1-fastdfs介绍&quot;&gt;1. FastDFS介绍&lt;/span&gt;&lt;/h1&gt;&lt;p&gt;FastDFS是一个开源的分布式文件系统，她对文件进行
       
     
     </summary>
@@ -172,16 +167,13 @@
     <link href="http://blog.xinwin.cn/2019/01/22/protocol-buffers/"/>
     <id>http://blog.xinwin.cn/2019/01/22/protocol-buffers/</id>
     <published>2019-01-22T07:18:23.000Z</published>
-    <updated>2019-05-05T04:19:57.417Z</updated>
+    <updated>2019-05-05T05:07:44.120Z</updated>
     
     <summary type="html">
     
       
       
-        &lt;blockquote&gt;
-&lt;p&gt;本文是对官方文档的翻译，然后截取了一篇非常优秀的文章片段来帮助理解，本人英文水平有限，基本都是直译，如果有不理解的地方请参考英文官方文档，参考的文章链接在文章末尾  &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1&gt;&lt;span id=&quot;protocal
+        &lt;!-- build time:Sun May 05 2019 13:07:50 GMT+0800 (CST) --&gt;&lt;!-- rebuild by neat --&gt;
       
     
     </summary>
@@ -204,7 +196,7 @@
     
       
       
-        &lt;h2&gt;&lt;span id=&quot;1引言&quot;&gt;&lt;strong&gt;1.引言&lt;/strong&gt;&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;git 和 svn 的一个显著区别就是提供更丰富的分支特性，我们今天就要说一下如何管理这些分支。关于 git 的分支管理，Vincent Driessen 有一篇文章说的
+        &lt;!-- build time:Sun May 05 2019 13:09:45 GMT+0800 (CST) --&gt;&lt;h2&gt;&lt;span id=&quot;1引言&quot;&gt;&lt;strong&gt;1.引言&lt;/strong&gt;&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;git 和 svn 的一个显著区别就是提供更丰富的分
       
     
     </summary>
@@ -221,14 +213,13 @@
     <link href="http://blog.xinwin.cn/2018/12/12/monkey-patch/"/>
     <id>http://blog.xinwin.cn/2018/12/12/monkey-patch/</id>
     <published>2018-12-12T03:07:26.000Z</published>
-    <updated>2019-05-05T04:05:41.094Z</updated>
+    <updated>2019-05-05T05:09:40.076Z</updated>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;简介&lt;br&gt;定义&lt;br&gt;以下是维基百科对猴子补丁的定义&lt;/p&gt;
-&lt;p&gt;The term monkey patch refers to dynamic modifications of a class or module at runtime, motivated by th
+        &lt;!-- build time:Sun May 05 2019 13:09:45 GMT+0800 (CST) --&gt;&lt;!-- rebuild by neat --&gt;
       
     
     </summary>
@@ -251,8 +242,7 @@
     
       
       
-        &lt;p&gt;monkey patch指的是在运行时动态替换,一般是在startup的时候.&lt;/p&gt;
-&lt;p&gt;用过gevent就会知道,会在最开头的地方gevent.monkey.patch_all();把标准库中的thread/socket等给替换掉.这样我们在后面使用socket的时候
+        &lt;!-- build time:Sun May 05 2019 13:09:45 GMT+0800 (CST) --&gt;&lt;p&gt;monkey patch指的是在运行时动态替换,一般是在startup的时候.&lt;/p&gt;&lt;p&gt;用过gevent就会知道,会在最开头的地方gevent.monk
       
     
     </summary>
