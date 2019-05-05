@@ -99,14 +99,14 @@
   <meta name="description" content="monkey patch指的是在运行时动态替换,一般是在startup的时候. 用过gevent就会知道,会在最开头的地方gevent.monkey.patch_all();把标准库中的thread/socket等给替换掉.这样我们在后面使用socket的时候可以跟平常一样使用,无需修改任何代码,但是它变成非阻塞的了. 一个比较实用的例子，很多代码用到 import json，后来发现ujson性">
 <meta name="keywords" content="Python">
 <meta property="og:type" content="article">
-<meta property="og:title" content="python-monkey-patch">
+<meta property="og:title" content="python的猴子补丁monkey patch">
 <meta property="og:url" content="http://blog.xinwin.cn/2018/12/12/python-monkey-patch/index.html">
 <meta property="og:site_name" content="陈鑫浩">
 <meta property="og:description" content="monkey patch指的是在运行时动态替换,一般是在startup的时候. 用过gevent就会知道,会在最开头的地方gevent.monkey.patch_all();把标准库中的thread/socket等给替换掉.这样我们在后面使用socket的时候可以跟平常一样使用,无需修改任何代码,但是它变成非阻塞的了. 一个比较实用的例子，很多代码用到 import json，后来发现ujson性">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-05T04:07:01.604Z">
+<meta property="og:updated_time" content="2019-05-05T04:24:20.103Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="python-monkey-patch">
+<meta name="twitter:title" content="python的猴子补丁monkey patch">
 <meta name="twitter:description" content="monkey patch指的是在运行时动态替换,一般是在startup的时候. 用过gevent就会知道,会在最开头的地方gevent.monkey.patch_all();把标准库中的thread/socket等给替换掉.这样我们在后面使用socket的时候可以跟平常一样使用,无需修改任何代码,但是它变成非阻塞的了. 一个比较实用的例子，很多代码用到 import json，后来发现ujson性">
 
 
@@ -127,7 +127,7 @@
   };
 </script>
 
-  <title>python-monkey-patch | 陈鑫浩</title>
+  <title>python的猴子补丁monkey patch | 陈鑫浩</title>
   
 
 
@@ -399,7 +399,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">python-monkey-patch
+          <h1 class="post-title" itemprop="name headline">python的猴子补丁monkey patch
 
               
             
@@ -488,8 +488,16 @@
         <p>monkey patch指的是在运行时动态替换,一般是在startup的时候.</p>
 <p>用过gevent就会知道,会在最开头的地方gevent.monkey.patch_all();把标准库中的thread/socket等给替换掉.这样我们在后面使用socket的时候可以跟平常一样使用,无需修改任何代码,但是它变成非阻塞的了.</p>
 <p>一个比较实用的例子，很多代码用到 import json，后来发现ujson性能更高，如果觉得把每个文件的import json 改成 import ujson as json成本较高，或者说想测试一下用ujson替换json是否符合预期，只需要在入口加上：</p>
-<p>1 import json<br>2 import ujson<br>3<br>4 def monkey_patch_json():<br>5     json.<strong>name</strong> = ‘ujson’<br>6     json.dumps = ujson.dumps<br>7     json.loads = ujson.loads<br>8<br>9 monkey_patch_json()</p>
-<p>最后,注意不能单纯的json = ujson来替换.</p>
+<pre><code>import json 
+import ujson 
+
+def monkey_patch_json(): 
+    json.__name__ = &apos;ujson&apos; 
+    json.dumps = ujson.dumps 
+    json.loads = ujson.loads 
+
+monkey_patch_json()
+</code></pre><p>最后,注意不能单纯的json = ujson来替换.</p>
 
       
     </div>

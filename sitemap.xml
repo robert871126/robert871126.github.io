@@ -2,9 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.xinwin.cn/2018/12/19/git-operation/</loc>
+    
+    <lastmod>2019-05-05T04:31:59.694Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.xinwin.cn/2018/12/12/python-monkey-patch/</loc>
     
-    <lastmod>2019-05-05T04:07:01.604Z</lastmod>
+    <lastmod>2019-05-05T04:24:20.103Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.xinwin.cn/2019/01/22/protocol-buffers/</loc>
+    
+    <lastmod>2019-05-05T04:19:57.417Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.xinwin.cn/2019/01/22/centos-fastdfs-nginx/</loc>
+    
+    <lastmod>2019-05-05T04:18:19.772Z</lastmod>
     
   </url>
   
@@ -16,30 +37,9 @@
   </url>
   
   <url>
-    <loc>http://blog.xinwin.cn/2018/12/19/git-operation/</loc>
-    
-    <lastmod>2019-05-05T04:03:51.643Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.xinwin.cn/2019/01/22/protocol-buffers/</loc>
-    
-    <lastmod>2019-05-05T04:02:00.934Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://blog.xinwin.cn/2019/02/14/setlocale-warning/</loc>
     
     <lastmod>2019-05-05T04:01:01.375Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.xinwin.cn/2019/01/22/centos-fastdfs-nginx/</loc>
-    
-    <lastmod>2019-05-05T04:00:16.338Z</lastmod>
     
   </url>
   

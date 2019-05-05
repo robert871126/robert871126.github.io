@@ -149,7 +149,7 @@
     <link href="http://blog.xinwin.cn/2019/01/22/centos-fastdfs-nginx/"/>
     <id>http://blog.xinwin.cn/2019/01/22/centos-fastdfs-nginx/</id>
     <published>2019-01-22T08:47:39.000Z</published>
-    <updated>2019-05-05T04:00:16.338Z</updated>
+    <updated>2019-05-05T04:18:19.772Z</updated>
     
     <summary type="html">
     
@@ -172,7 +172,7 @@
     <link href="http://blog.xinwin.cn/2019/01/22/protocol-buffers/"/>
     <id>http://blog.xinwin.cn/2019/01/22/protocol-buffers/</id>
     <published>2019-01-22T07:18:23.000Z</published>
-    <updated>2019-05-05T04:02:00.934Z</updated>
+    <updated>2019-05-05T04:19:57.417Z</updated>
     
     <summary type="html">
     
@@ -198,14 +198,13 @@
     <link href="http://blog.xinwin.cn/2018/12/19/git-operation/"/>
     <id>http://blog.xinwin.cn/2018/12/19/git-operation/</id>
     <published>2018-12-19T12:42:35.000Z</published>
-    <updated>2019-05-05T04:03:51.643Z</updated>
+    <updated>2019-05-05T04:31:59.694Z</updated>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;1.引言&lt;br&gt;git 和 svn 的一个显著区别就是提供更丰富的分支特性，我们今天就要说一下如何管理这些分支。关于 git 的分支管理，Vincent Driessen 有一篇文章说的非常好，地址在参考[1]。我这里主要就是参考他的文章。&lt;/p&gt;
-&lt;ol start=&quot;2
+        &lt;h2&gt;&lt;span id=&quot;1引言&quot;&gt;&lt;strong&gt;1.引言&lt;/strong&gt;&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;git 和 svn 的一个显著区别就是提供更丰富的分支特性，我们今天就要说一下如何管理这些分支。关于 git 的分支管理，Vincent Driessen 有一篇文章说的
       
     
     </summary>
@@ -242,11 +241,11 @@
   </entry>
   
   <entry>
-    <title>python-monkey-patch</title>
+    <title>python的猴子补丁monkey patch</title>
     <link href="http://blog.xinwin.cn/2018/12/12/python-monkey-patch/"/>
     <id>http://blog.xinwin.cn/2018/12/12/python-monkey-patch/</id>
     <published>2018-12-12T02:50:08.000Z</published>
-    <updated>2019-05-05T04:07:01.604Z</updated>
+    <updated>2019-05-05T04:24:20.103Z</updated>
     
     <summary type="html">
     
