@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.xinwin.cn/2019/05/06/docker-gitbook/</loc>
+    
+    <lastmod>2019-05-06T06:22:19.633Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.xinwin.cn/2019/01/22/protocol-buffers/</loc>
     
     <lastmod>2019-05-05T05:14:35.251Z</lastmod>
