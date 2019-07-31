@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.xinwin.cn/2019/07/31/docker-reviewboard/</loc>
+    
+    <lastmod>2019-07-31T00:36:28.058Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.xinwin.cn/2019/05/06/docker-gitbook/</loc>
     
     <lastmod>2019-05-06T06:35:11.167Z</lastmod>
